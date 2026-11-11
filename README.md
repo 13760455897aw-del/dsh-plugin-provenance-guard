@@ -139,7 +139,8 @@ dsh plugin --profile <你的 profile> add /path/to/dsh-plugin-provenance-guard
 
 | 网络 | 索引源地址 |
 |---|---|
-| 国内（推荐） | `https://ghproxy.net/https://raw.githubusercontent.com/13760455897aw-del/dsh-plugin-provenance-guard/main/market/index.json` |
+| 国内（推荐） | `https://gh-proxy.com/https://raw.githubusercontent.com/13760455897aw-del/dsh-plugin-provenance-guard/main/market/index.json` |
+| 国内备用 | `https://ghproxy.net/https://raw.githubusercontent.com/13760455897aw-del/dsh-plugin-provenance-guard/main/market/index.json` |
 | 可直连 GitHub | `https://raw.githubusercontent.com/13760455897aw-del/dsh-plugin-provenance-guard/main/market/index.json` |
 
 索引文件在 [market/index.json](market/index.json)（格式 1），每个版本钉死在 Git 提交上，安装结果可复现。若 `ghproxy` 不可用，把前缀换成 `https://gh-proxy.com/` 亦可。
