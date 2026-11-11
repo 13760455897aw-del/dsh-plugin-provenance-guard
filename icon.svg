@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Provenance Guard">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#111827"/>
+  <g stroke="#64748b" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <path d="M23 17 H33 C39 17 39 27 39 32"/>
+    <path d="M23 32 H39"/>
+    <path d="M23 47 H33 C39 47 39 37 39 32"/>
+  </g>
+  <circle cx="17" cy="17" r="5.5" fill="#60a5fa"/>
+  <circle cx="17" cy="32" r="5.5" fill="#60a5fa" opacity="0.72"/>
+  <circle cx="17" cy="47" r="5.5" fill="#60a5fa" opacity="0.45"/>
+  <circle cx="46" cy="32" r="6.5" fill="#22d3ee"/>
+</svg>

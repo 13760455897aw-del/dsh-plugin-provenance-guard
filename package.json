@@ -1,0 +1,55 @@
+{
+  "name": "dsh-plugin-provenance-guard",
+  "version": "0.8.0",
+  "type": "module",
+  "description": "Source-lineage audit for web_search results: collapses N results into K independent lineages, grades how strongly a claim may be asserted (A/B/C/D), and traces every figure back to its origin.",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "lib/audit.js",
+    "lib/verify.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "provenance",
+    "rag",
+    "source-audit",
+    "misinformation"
+  ],
+  "license": "MIT",
+  "author": "HU Hanzhe",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13760455897aw-del/dsh-plugin-provenance-guard.git"
+  },
+  "homepage": "https://github.com/13760455897aw-del/dsh-plugin-provenance-guard#readme",
+  "bugs": {
+    "url": "https://github.com/13760455897aw-del/dsh-plugin-provenance-guard/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

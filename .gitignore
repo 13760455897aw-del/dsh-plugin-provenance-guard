@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+.pnpm-debug.log*
+
+# runtime state
+*.log
+*.tmp
+provenance-guard-ledger.json
+provenance-guard.json
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# local builds
+dist/
+.out/

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Provenance Guard",
+    "description": "Collapses search results into independent source lineages before they enter context, and grades how strongly a claim may be asserted. Never deletes results or calls a verdict."
+  }
+}
