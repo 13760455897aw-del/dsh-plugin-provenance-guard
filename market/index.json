@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Provenance Guard",
+    "zh": "来源审计"
+  },
+  "description": {
+    "en": "Source-lineage audit for web_search results.",
+    "zh": "检索结果的来源谱系审计：把 N 条结果折叠成 K 条独立来源，判级 A/B/C/D，并回溯每个数字的最早出处。"
+  },
+  "metadata": {
+    "categories": {
+      "research": {
+        "title": {
+          "en": "Research & Verification",
+          "zh": "检索与核查"
+        }
+      }
+    },
+    "labels": {
+      "open-source": {
+        "title": {
+          "en": "Open source",
+          "zh": "开源"
+        }
+      },
+      "deterministic": {
+        "title": {
+          "en": "Deterministic",
+          "zh": "确定性实现"
+        }
+      }
+    },
+    "sortKeys": {
+      "added": {
+        "title": {
+          "en": "Added",
+          "zh": "上架时间"
+        },
+        "order": "desc"
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-provenance-guard",
+      "title": {
+        "en": "Provenance Guard",
+        "zh": "来源审计"
+      },
+      "description": {
+        "en": "Collapses N web_search results into K independent lineages, grades evidence A/B/C/D as an executable sentence, and traces every figure back to its earliest source. Silent unless the result set is distorted.",
+        "zh": "把 N 条检索结果折叠成 K 条独立来源谱系，把证据强度翻译成 A/B/C/D 四级可执行句式，并回溯每个数字的最早出处；结果集正常时保持静默。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCIgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlByb3ZlbmFuY2UgR3VhcmQiPgogIDxyZWN0IHg9IjIiIHk9IjIiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcng9IjE0IiBmaWxsPSIjMTExODI3Ii8+CiAgPGcgc3Ryb2tlPSIjNjQ3NDhiIiBzdHJva2Utd2lkdGg9IjIuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIj4KICAgIDxwYXRoIGQ9Ik0yMyAxNyBIMzMgQzM5IDE3IDM5IDI3IDM5IDMyIi8+CiAgICA8cGF0aCBkPSJNMjMgMzIgSDM5Ii8+CiAgICA8cGF0aCBkPSJNMjMgNDcgSDMzIEMzOSA0NyAzOSAzNyAzOSAzMiIvPgogIDwvZz4KICA8Y2lyY2xlIGN4PSIxNyIgY3k9IjE3IiByPSI1LjUiIGZpbGw9IiM2MGE1ZmEiLz4KICA8Y2lyY2xlIGN4PSIxNyIgY3k9IjMyIiByPSI1LjUiIGZpbGw9IiM2MGE1ZmEiIG9wYWNpdHk9IjAuNzIiLz4KICA8Y2lyY2xlIGN4PSIxNyIgY3k9IjQ3IiByPSI1LjUiIGZpbGw9IiM2MGE1ZmEiIG9wYWNpdHk9IjAuNDUiLz4KICA8Y2lyY2xlIGN4PSI0NiIgY3k9IjMyIiByPSI2LjUiIGZpbGw9IiMyMmQzZWUiLz4KPC9zdmc+Cg==",
+      "author": "HU Hanzhe",
+      "homepage": "https://github.com/13760455897aw-del/dsh-plugin-provenance-guard#readme",
+      "repository": {
+        "url": "https://github.com/13760455897aw-del/dsh-plugin-provenance-guard"
+      },
+      "metadata": {
+        "category": "research",
+        "keywords": [
+          "provenance",
+          "rag",
+          "source-audit",
+          "misinformation",
+          "web-search"
+        ],
+        "labels": [
+          "open-source",
+          "deterministic"
+        ],
+        "sortKeys": {
+          "added": 1794401021
+        }
+      },
+      "versions": [
+        {
+          "version": "0.8.0",
+          "publishTimestamp": 1794401021,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/13760455897aw-del/dsh-plugin-provenance-guard",
+            "commit": "73be1d51dda08ab76e8325d56a25ad8bc82764cd"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1"
+          }
+        }
+      ]
+    }
+  ]
+}
