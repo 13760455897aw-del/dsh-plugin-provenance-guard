@@ -63,24 +63,36 @@
 
 需要 **DeepSeek Harness**（桌面版或 `dsh` CLI）。
 
-### 从 Git 安装（推荐）
+### 从 npm 安装（推荐，国内可用）
 
 ```bash
-dsh plugin --profile <你的 profile> add github:<owner>/dsh-plugin-provenance-guard
+dsh plugin --profile <你的 profile> add dsh-plugin-provenance-guard
+```
+
+走 npm 源（或 npmmirror 镜像），不需要能访问 GitHub。
+
+### 从 Git 安装
+
+```bash
+dsh plugin --profile <你的 profile> add github:13760455897aw-del/dsh-plugin-provenance-guard
 ```
 
 也可以直接给仓库地址：
 
 ```bash
-dsh plugin --profile <你的 profile> add https://github.com/<owner>/dsh-plugin-provenance-guard.git
+dsh plugin --profile <你的 profile> add https://github.com/13760455897aw-del/dsh-plugin-provenance-guard.git
 ```
 
-> 桌面版应用的 `desktop` profile 由客户端独占管理，用 CLI 装不进去——请在 **设置 → 插件** 里添加 bundle，或把插件装到另一个 profile 后用 `dsh --profile <名字>` 启动。
+> 桌面版应用的 `desktop` profile 由客户端独占管理，用 CLI 装不进去——请在 **设置 → 插件** 里添加，或把插件装到另一个 profile 后用 `dsh --profile <名字>` 启动。
+
+### 从插件市场安装
+
+在「设置 → 插件 → 发现」里添加索引源（见下文「插件市场」），搜「来源审计」。
 
 ### 本地开发
 
 ```bash
-git clone <repo>
+git clone https://github.com/13760455897aw-del/dsh-plugin-provenance-guard
 dsh plugin --profile <你的 profile> add /path/to/dsh-plugin-provenance-guard
 ```
 
@@ -120,6 +132,17 @@ dsh plugin --profile <你的 profile> add /path/to/dsh-plugin-provenance-guard
 会话标题栏右侧的「来源台账」按钮，列出本会话查过的每一次检索：等级、主张数字、最早出处、转述数。
 
 ---
+
+## 插件市场（Discover）
+
+插件市场按「索引源」工作：添加下面这个索引地址后，在「设置 → 插件 → 发现」里就能搜到本插件并一键安装。
+
+| 网络 | 索引源地址 |
+|---|---|
+| 国内（推荐） | `https://ghproxy.net/https://raw.githubusercontent.com/13760455897aw-del/dsh-plugin-provenance-guard/main/market/index.json` |
+| 可直连 GitHub | `https://raw.githubusercontent.com/13760455897aw-del/dsh-plugin-provenance-guard/main/market/index.json` |
+
+索引文件在 [market/index.json](market/index.json)（格式 1），每个版本钉死在 Git 提交上，安装结果可复现。若 `ghproxy` 不可用，把前缀换成 `https://gh-proxy.com/` 亦可。
 
 ## 配置
 
